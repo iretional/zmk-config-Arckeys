@@ -1,0 +1,14 @@
+file_format: "1"
+id: arckeys
+name: Arckeys
+url: https://lowprokb.ca/collections/keyboards/products/corne-ish-zen
+type: board
+arch: arm
+features:
+  - keys
+outputs:
+  - usb
+  - ble
+siblings:
+  - arckeys_left
+  - arckeys_right

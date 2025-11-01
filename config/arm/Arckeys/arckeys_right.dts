@@ -1,0 +1,40 @@
+/*
+*
+* Copyright (c) 2024 Ireh Choin
+* SPDX-License-Identifier: MIT
+*
+*/
+
+#include "arckeys.dtsi"
+
+/{
+    chosen {
+    };
+
+    kscan0: kscan {
+        compatible = "zmk,kscan-gpio-matrix";
+
+        diode-direction = "col2row";
+        
+        row-gpios
+            = <&gpio0  4 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // RW 1 (top row)
+            , <&gpio0  5 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // RW 2
+            , <&gpio1  9 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // RW 3
+            , <&gpio0 11 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // RW 4 (bottom row)
+            ;
+
+        col-gpios
+            = <&gpio0 10 GPIO_ACTIVE_HIGH> // Col 1 R (most left)
+            , <&gpio0  9 GPIO_ACTIVE_HIGH> // Col 2 
+            , <&gpio0 20 GPIO_ACTIVE_HIGH> // Col 3
+            , <&gpio0 17 GPIO_ACTIVE_HIGH> // Col 4 
+            , <&gpio0 15 GPIO_ACTIVE_HIGH> // Col 5
+            , <&gpio0  3 GPIO_ACTIVE_HIGH> // Col 6 R (most right)
+            ;
+            
+    };
+};
+
+&default_transform {
+    col-offset = <6>;
+};

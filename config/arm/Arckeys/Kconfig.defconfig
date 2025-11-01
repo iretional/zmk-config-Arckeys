@@ -1,0 +1,30 @@
+#
+# Copyright (c) 2024 Ireh Choi
+# SPDX-License-Identifier: MIT
+#
+
+if BOARD_ARKEYS_LEFT
+
+config ZMK_KEYBOARD_NAME
+    default "arckeys"
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+endif # BOARD_ARCKEYS_LEFT
+
+
+if BOARD_ARCKEYS_LEFT || BOARD_ARCKEYS_RIGHT
+
+config BOARD
+    default "arckeys"
+
+config ZMK_SPLIT
+    default y
+
+config BT_CTLR
+    default BT
+
+
+endif # BOARD_ARCKEYS_LEFT || BOARD_ARCKEYS_RIGHT
+
