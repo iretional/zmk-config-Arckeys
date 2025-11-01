@@ -1,0 +1,17 @@
+identifier: arckeys
+name: Arckeys
+url: https://lowprokb.ca/collections/keyboards/products/corne-ish-zen
+type: mcu
+arch: arm
+toolchain:
+  - zephyr
+  - gnuarmemb
+  - xtools
+supported:
+  - adc
+  - usb_device
+  - ble
+  - ieee802154
+  - pwm
+  - watchdog
+  - gpio
