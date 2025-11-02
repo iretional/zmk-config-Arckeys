@@ -17,7 +17,7 @@
 
 / {
     model = "arckeys";
-    compatible = "miro,arckeys";
+    compatible = "arckeys";
 
     chosen {
         zephyr,code-partition = &code_partition;
