@@ -1,12 +1,12 @@
 #
-# Copyright (c) 2024 Ireh Choi
+# Copyright (c) 2023 The ZMK Contributors
 # SPDX-License-Identifier: MIT
 #
 
 config BOARD_ARCKEYS_LEFT
-    bool "arckeys left"
-	depends on SOC_NRF52840
+    bool "arckeys_left"
+    depends on SOC_NRF52840_QIAA
 
 config BOARD_ARCKEYS_RIGHT
-    bool "arckeys right"
-	depends on SOC_NRF52840
+    bool "arckeys_right"
+    depends on SOC_NRF52840_QIAA

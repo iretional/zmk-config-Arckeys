@@ -1,8 +1,8 @@
-file_format: "1"
+file_format: '1'
 id: arckeys
-name: Arckeys
-url: https://lowprokb.ca/collections/keyboards/products/corne-ish-zen
+name: arckeys
 type: board
+url: https://michaelrommel.com/create/2024-02-01_arckeys
 arch: arm
 features:
   - keys
