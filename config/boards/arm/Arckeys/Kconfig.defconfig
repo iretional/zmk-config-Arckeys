@@ -3,7 +3,7 @@
 # SPDX-License-Identifier: MIT
 #
 
-if BOARD_ARKEYS_LEFT
+if BOARD_ARCKEYS_LEFT
 
 config ZMK_KEYBOARD_NAME
     default "arckeys"
