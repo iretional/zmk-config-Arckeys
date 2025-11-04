@@ -5,9 +5,9 @@
 
 if BOARD_ARCKEYS_LEFT
 
-config ZMK_KEYBOARD_NAME
-    default "arckeys"
-
+config BOARD
+    default "arckeys left"
+    
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
 
@@ -15,22 +15,24 @@ endif # BOARD_ARCKEYS_LEFT
 
 if BOARD_ARCKEYS_RIGHT
 
-config ZMK_KEYBOARD_NAME
+config BOARD
     default "arckeys right"
 
 endif # BOARD_ARCKEYS_RIGHT
 
-
 if BOARD_ARCKEYS_LEFT || BOARD_ARCKEYS_RIGHT
-
-config BOARD
-    default "arckeys"
 
 config ZMK_SPLIT
     default y
 
 config BT_CTLR
     default BT
+
+config ZMK_KSCAN_MATRIX_WAIT_BETWEEN_OUTPUTS
+    default 5
+
+config PINCTRL
+    default y
 
 if USB
 
@@ -41,5 +43,3 @@ config USB_DEVICE_STACK
     default y
 
 endif # USB
-
-endif # BOARD_ARCKEYS_LEFT || BOARD_ARCKEYS_RIGHT
