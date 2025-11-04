@@ -74,27 +74,29 @@
 };
 
 &flash0 {
-    /*
-     * For more information, see:
-     * http://docs.zephyrproject.org/latest/devices/dts/flash_partitions.html
-     */
-     
     partitions {
         compatible = "fixed-partitions";
         #address-cells = <1>;
         #size-cells = <1>;
 
-        /* ★ SoftDevice 제거: 앱을 0x0000에서 시작 */
-        code_partition: partition@0 {
-            reg = <0x00000000 0x000ec000>;   // 앱 영역 (부트/스토리지 앞까지)
+        /* Placeholder: 4KB */
+        sd_partition: partition@0 {
+            reg = <0x00000000 0x00001000>;  // 4KB
         };
 
-        storage_partition: partition@ec000 {
-            reg = <0x000ec000 0x00008000>;   // 32 KB (원래 값 유지)
+        /* Code: 4KB ~ 848KB */
+        code_partition: partition@1000 {
+            reg = <0x00001000 0x000D3000>;  // 844KB
         };
 
+        /* Storage: 848KB ~ 976KB */
+        storage_partition: partition@d4000 {
+            reg = <0x000D4000 0x00020000>;  // 128KB
+        };
+
+        /* Bootloader: 976KB ~ 1024KB */
         boot_partition: partition@f4000 {
-            reg = <0x000f4000 0x0000c000>;   // 48 KB 부트로더 (Adafruit 기본과 일치)
+            reg = <0x000F4000 0x0000C000>;  // 48KB
         };
     };
 };
