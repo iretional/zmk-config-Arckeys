@@ -21,5 +21,8 @@
 #   - board: corneish_zen_v2_left
 #   - board: corneish_zen_v2_right
 include:
-  - board: arckeys_left
-  - board: arckeys_right
+  - board: arckeys
+    shield: a_dux_left
+  - board: arckeys
+    shield: a_dux_right
+

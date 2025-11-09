@@ -1,14 +1,9 @@
-file_format: '1'
+file_format: "1"
 id: arckeys
 name: arckeys
 type: board
-url: https://michaelrommel.com/create/2024-02-01_arckeys
 arch: arm
-features:
-  - keys
 outputs:
   - usb
   - ble
-siblings:
-  - arckeys_left
-  - arckeys_right
+url: https://
