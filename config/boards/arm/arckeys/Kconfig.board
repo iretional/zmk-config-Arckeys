@@ -1,9 +1,15 @@
-# arckeys board configuration
-
-# Copyright (c) 2020 Pete Johanson
+#
+# Copyright (c) 2022 Darryl deHaan
 # SPDX-License-Identifier: MIT
+#
 
-config BOARD_ARCKEYS
-    bool "arkeys"
+
+config BOARD_ARCKEYS_LEFT
+    bool "arckeys left"
     depends on SOC_NRF52840_QIAA
+    select BOARD_ARCKEYS_LEFT
 
+config BOARD_ARCKEYS_RIGHT
+    bool "arckeys right"
+    depends on SOC_NRF52840_QIAA
+    select BOARD_ARCKEYS_RIGHT
