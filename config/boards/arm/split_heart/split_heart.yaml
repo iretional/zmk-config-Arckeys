@@ -1,5 +1,6 @@
-identifier: arckeys
-name: Arckeys
+identifier: split_heart
+name: Split Heart
+url: https://
 type: keyboard
 arch: arm
 toolchain:
@@ -8,10 +9,12 @@ toolchain:
   - xtools
 supported:
   - adc
-  - gpio
   - usb_device
-  - kscan
   - ble
   - ieee802154
+  - nvs
+  - counter
+  - kscan
   - pwm
   - watchdog
+  - gpio

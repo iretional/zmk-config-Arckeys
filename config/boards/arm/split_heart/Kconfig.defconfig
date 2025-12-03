@@ -1,0 +1,30 @@
+#
+# Copyright (c) 2025 Ireh Choi
+# SPDX-License-Identifier: MIT
+#
+
+if BOARD_SPLIT_HEART_LEFT
+
+config ZMK_KEYBOARD_NAME
+    default "Split Heart"
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+endif # BOARD_SPLIT_HEART_LEFT
+
+
+if BOARD_SPLIT_HEART_LEFT || BOARD_SPLIT_HEART_RIGHT
+
+config BOARD
+    default "split_heart"
+
+config ZMK_SPLIT
+    default y
+
+config BT_CTLR
+    default BT
+
+
+endif # BOARD_SPLIT_HEART_LEFT || BOARD_SPLIT_HEART_RIGHT
+
