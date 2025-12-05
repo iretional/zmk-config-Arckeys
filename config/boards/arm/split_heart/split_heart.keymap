@@ -48,7 +48,7 @@
 &kp LCTRL   &kp A       &kp S       &kp D       &kp F       &kp G           &kp H       &kp J       &kp K       &kp L       &kp SEMI    &kp SQT
 &kp Q       &kp LSHFT   &kp Z       &kp X       &kp C       &kp V           &kp B       &kp N       &kp M       &kp DOT     &kp SLASH   &kp BSLH
                         &kp LALT    &kp LGUI                                                        &kp COMMA   &kp LANG1       
-                        &kp SPACE   &lt 1 BSPC  &mo 2       &mo 3           &kp N4      &kp N3      &lt 1 ENTER &kp RSHFT
+                        &kp SPACE   &lt 1 BSPC  &mo 2       &mo 3           &mo 3       &mo 2       &lt 1 ENTER &kp RSHFT
             >;
         };
 
