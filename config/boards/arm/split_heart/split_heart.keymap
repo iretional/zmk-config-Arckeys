@@ -46,18 +46,18 @@
 &kp GRAVE   &kp N1      &kp N2      &kp N3      &kp N4      &kp N5          &kp N6      &kp N7      &kp N8      &kp N9      &kp N0      &kp MINUS 
 &kp TAB     &kp Q       &kp W       &kp E       &kp R       &kp T           &kp Y       &kp U       &kp I       &kp O       &kp P       &kp EQUAL
 &kp LCTRL   &kp A       &kp S       &kp D       &kp F       &kp G           &kp H       &kp J       &kp K       &kp L       &kp SEMI    &kp SQT
-&kp Q       &kp LALT    &kp Z       &kp X       &kp C       &kp V           &kp B       &kp N       &kp M       &kp DOT     &kp SLASH   &kp BSLH
-                        &kp LGUI    &kp ENTER                                                       &kp COMMA   &kp LANG1       
-                        &kp SPACE   &lt 1 BSPC  &kp N1      &kp N2          &kp N4      &kp N3      &lt 1 ENTER &kp RSHFT
+&kp Q       &kp LSHFT   &kp Z       &kp X       &kp C       &kp V           &kp B       &kp N       &kp M       &kp DOT     &kp SLASH   &kp BSLH
+                        &kp LALT    &kp LGUI                                                        &kp COMMA   &kp LANG1       
+                        &kp SPACE   &lt 1 BSPC  &mo 2       &mo 3           &kp N4      &kp N3      &lt 1 ENTER &kp RSHFT
             >;
         };
 
         cls_layer {
             bindings = <
-&kp ESC     &kp N1      &kp KP_COM  &kp KP_DIV  &kp KP_MULT &kp BSPC        &kp N6      &kp N7      &kp F11     &kp F12     &kp N0      &kp MINUS 
+&kp ESC     &kp DEL     &kp KP_COM  &kp KP_DIV  &kp KP_MULT &kp BSPC        &kp N6      &kp N7      &kp F11     &kp F12     &kp N0      &kp MINUS 
 &kp KP_NUM  &kp Q       &kp KP_N7   &kp KP_N8   &kp KP_N9   &kp KP_MINUS    &kp Y       &kp F7      &kp F8      &kp F9      &kp P       &kp EQUAL
 &trans      &kp A       &kp KP_N4   &kp KP_N5   &kp KP_N6   &kp KP_PLUS     &kp H       &kp F4      &kp F5      &kp F6      &kp SEMI    &kp SQT
-&trans      &kp LALT    &kp KP_N1   &kp KP_N2   &kp KP_N3   &kp KP_ENTER    &kp B       &kp F1      &kp F2      &kp F3     &kp SLASH   &kp BSLH
+&trans      &trans      &kp KP_N1   &kp KP_N2   &kp KP_N3   &kp KP_ENTER    &kp B       &kp F1      &kp F2      &kp F3     &kp SLASH   &kp BSLH
                         &kp KP_N0   &kp KP_DOT                                                      &kp COMMA   &kp LANG1       
                         &kp BSPC    &trans      &trans      &trans          &trans      &trans      &trans      &trans 
             >;
@@ -67,9 +67,9 @@
         upr_layer {
             bindings = <
 &kp ESC     &kp N1      &kp N2      &kp N3      &kp N4      &kp N5          &kp N6      &kp N7      &kp N8      &kp N9      &kp N0      &kp MINUS 
-&kp CAPS    &kp Q       &kp W       &kp UP      &kp R       &kp T           &kp Y       &kp U       &kp I       &kp O       &kp P       &kp EQUAL
+&kp CAPS    &kp Q       &kp HOME    &kp UP      &kp END     &kp T           &kp Y       &kp U       &kp I       &kp O       &kp P       &kp EQUAL
 &kp LCTRL   &kp A       &kp LEFT    &kp DOWN    &kp RIGHT   &kp G           &kp H       &kp J       &kp K       &kp L       &kp SEMI    &kp SQT
-&kp LSHFT   &kp LALT    &kp N1      &kp N2      &kp N3      &kp V           &kp B       &kp N       &kp M       &kp DOT     &kp SLASH   &kp BSLH
+&kp LSHFT   &kp LALT    &kp PG_UP   &kp UP      &kp PG_DN   &kp V           &kp B       &kp N       &kp M       &kp DOT     &kp SLASH   &kp BSLH
                         &kp LGUI    &kp ENTER                                                       &kp COMMA   &kp LANG1       
                         &trans      &trans      &trans      &trans          &trans      &trans      &trans      &trans 
             >;
