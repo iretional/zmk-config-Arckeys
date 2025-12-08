@@ -135,7 +135,7 @@
         cls_layer {
             bindings = <
 &kp ESC     &kp DEL     &kp COMMA   &kp KP_DIV  &kp KP_MULT &kp BSPC        &kp N6      &kp F10     &kp F11     &kp F12     &kp N0      &kp MINUS 
-&kp KP_NUM  &kp Q       &kpn        &kpn8       &kpn9       &kpmin          &kp Y       &kp F7      &kp F8      &kp F9      &kp P       &kp EQUAL
+&kp KP_NUM  &kp Q       &kpn7       &kpn8       &kpn9       &kpmin          &kp Y       &kp F7      &kp F8      &kp F9      &kp P       &kp EQUAL
 &trans      &kp A       &kpn4       &kpn5       &kpn6       &kpplus         &kp H       &kp F4      &kp F5      &kp F6      &kp SEMI    &kp SQT
 &trans      &trans      &kpn1       &kpn2       &kpn3       &kp COMMA       &kp B       &kp F1      &kp F2      &kp F3      &kp SLASH   &kp BSLH
                         &kpn0       &kp KP_DOT                                                      &trans      &kp LANG2       
