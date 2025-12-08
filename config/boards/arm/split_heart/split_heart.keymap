@@ -50,7 +50,7 @@
         kpn3: kpn3_shiftn3 {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp KP_N13>, <&kp POUND>;
+            bindings = <&kp KP_N3>, <&kp POUND>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
         kpn4: kpn4_shiftn4 {
@@ -68,7 +68,7 @@
         kpn6: kpn6_shiftn6 {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp KP_N1>, <&kp CARET>;
+            bindings = <&kp KP_N6>, <&kp CARET>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
         kpn7: kpn7_shiftn7 {
