@@ -1,0 +1,20 @@
+identifier: split_heart
+name: Split Heart
+url: https://
+type: keyboard
+arch: arm
+toolchain:
+  - zephyr
+  - gnuarmemb
+  - xtools
+supported:
+  - adc
+  - usb_device
+  - ble
+  - ieee802154
+  - nvs
+  - counter
+  - kscan
+  - pwm
+  - watchdog
+  - gpio
