@@ -23,6 +23,8 @@ CONFIG_PINCTRL=y
 
 # enable GPIO
 CONFIG_GPIO=y
+CONFIG_LED=y
+CONFIG_LED_GPIO=y
 
 # Enable writing to flash
 CONFIG_USE_DT_CODE_PARTITION=y
