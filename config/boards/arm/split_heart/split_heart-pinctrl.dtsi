@@ -1,0 +1,8 @@
+/*
+ * Copyright (c) 2025 Ireh Choi
+ * SPDX-License-Identifier: MIT
+ */
+
+&pinctrl {
+    // pinctrl configurations will go here if needed
+};
