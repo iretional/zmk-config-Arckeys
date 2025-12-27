@@ -1,0 +1,5 @@
+config BOARD_SPLIT_HEART_LEFT
+       bool
+   
+config BOARD_SPLIT_HEART_RIGHT
+       bool
