@@ -24,4 +24,8 @@ include:
   - board: split_heart_left
   - board: split_heart_right
   
-
+  # settings/bonding 초기화용 펌웨어
+  - board: split_heart_left
+    shield: settings_reset
+  - board: split_heart_right
+    shield: settings_reset
